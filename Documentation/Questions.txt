@@ -1,0 +1,11 @@
+Are circular @Depends dependencies permitted? -> No
+How can you depend on another EJB which is in another jar? -> @Depends({"jar1.jar#EJB", "C"})
+How can you define a timeout for requiring an EJB? -> @AccessTimeout
+What will happen when a bean can not be required within the set timeout? -> A ConcurrentAccessTimeoutException is thrown.
+What happens when a @Lock(READ) method invokes, via another bean, an @Lock(WRITE) method on the same bean? An IllegalLoopbackException is thrown.
+Can an MDB implement more than one message listener methods? -> Yes, this is valid. The resource adapter will determine which one to invoke.
+Can multiple MDB listen to the same queue? Yes but this is unspecified.
+What happens when an Bean managed MDB throws a runtime exception? -> The container does not acknowledge the message.
+Can an application send and receive messages within the same transaction? -> No, this is not valid.
+How can you aquire message endpoints? -> Via injection and a lookup.
+
