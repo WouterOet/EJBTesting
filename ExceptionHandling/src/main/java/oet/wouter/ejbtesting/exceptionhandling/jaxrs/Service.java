@@ -47,6 +47,17 @@ public class Service {
         return invoke(chainedTarget::invokeApplication);
     }
 
+    @GET
+    @Path("transaction/runtime")
+    public String invokeWithRuntimeExceptionWithoutTransaction() {
+        return invoke(target::throwRuntimeExceptionWithoutTransaction);
+    }
+    @GET
+    @Path("transaction/application")
+    public String invokeWithApplicationExceptionWithoutTransaction() {
+        return invoke(target::throwApplicationExceptionWithoutTransaction);
+    }
+
     private String invoke(Runnable r) {
         try {
             r.run();

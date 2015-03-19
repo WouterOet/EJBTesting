@@ -6,6 +6,9 @@ import oet.wouter.ejbtesting.exceptionhandling.simple.Target;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
+/**
+ * This demonstrates what happens when an EJB calls another EJB which in turn throws an exception.
+ */
 @Stateless
 public class ChainedTarget {
 
