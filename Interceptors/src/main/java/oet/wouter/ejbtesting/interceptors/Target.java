@@ -6,6 +6,9 @@ import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptors;
 import javax.interceptor.InvocationContext;
 
+/**
+ * This demonstrates the invocation order of interceptors.
+ */
 @Stateless
 @Interceptors({ClassLevelInterceptorOne.class, ClassLevelInterceptorTwo.class})
 public class Target extends TargetSuperInterceptor {
