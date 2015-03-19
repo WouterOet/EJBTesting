@@ -11,6 +11,7 @@
     <modules>
         <module>Interceptors</module>
         <module>ExceptionHandling</module>
+        <module>ComponentConstruction</module>
     </modules>
 
     <properties>
