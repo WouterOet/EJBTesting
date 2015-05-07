@@ -1,4 +1,6 @@
-package oet.wouter.ejbtesting.interceptors;
+package oet.wouter.ejbtesting.interceptors.order;
+
+import oet.wouter.ejbtesting.interceptors.EventStorage;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
@@ -17,6 +19,7 @@ public abstract class AbstractInterceptor {
 
     @AroundInvoke
     public Object intercept(InvocationContext context) throws Exception {
+
         eventStorage.addEvent(getClass().getName() + " instance invoked");
         return context.proceed();
     }

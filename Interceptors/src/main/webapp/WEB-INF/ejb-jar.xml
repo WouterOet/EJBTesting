@@ -3,17 +3,17 @@
          version="3.0" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd">
     <interceptors>
         <interceptor>
-            <interceptor-class>oet.wouter.ejbtesting.interceptors.DefaultInterceptorOne</interceptor-class>
+            <interceptor-class>oet.wouter.ejbtesting.interceptors.order.DefaultInterceptorOne</interceptor-class>
         </interceptor>
         <interceptor>
-            <interceptor-class>oet.wouter.ejbtesting.interceptors.DefaultInterceptorTwo</interceptor-class>
+            <interceptor-class>oet.wouter.ejbtesting.interceptors.order.DefaultInterceptorTwo</interceptor-class>
         </interceptor>
     </interceptors>
     <assembly-descriptor>
         <interceptor-binding>
             <ejb-name>*</ejb-name>
-            <interceptor-class>oet.wouter.ejbtesting.interceptors.DefaultInterceptorOne</interceptor-class>
-            <interceptor-class>oet.wouter.ejbtesting.interceptors.DefaultInterceptorTwo</interceptor-class>
+            <interceptor-class>oet.wouter.ejbtesting.interceptors.order.DefaultInterceptorOne</interceptor-class>
+            <interceptor-class>oet.wouter.ejbtesting.interceptors.order.DefaultInterceptorTwo</interceptor-class>
         </interceptor-binding>
     </assembly-descriptor>
 </ejb-jar>

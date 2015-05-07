@@ -1,4 +1,6 @@
-package oet.wouter.ejbtesting.interceptors;
+package oet.wouter.ejbtesting.interceptors.order;
+
+import oet.wouter.ejbtesting.interceptors.EventStorage;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
