@@ -12,6 +12,7 @@
         <module>Interceptors</module>
         <module>ExceptionHandling</module>
         <module>ComponentConstruction</module>
+        <module>Asynchronous</module>
     </modules>
 
     <properties>
